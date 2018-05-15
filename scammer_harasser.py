@@ -20,7 +20,7 @@ def call_number(numbers):
         print("Calling the following phone number:  " + number)
 
         client.calls.create(to=number, from_=YOUR_NUMBER,
-                            url=XML_URL, method="GET")
+                            url=XML_URL)
 
 
 
