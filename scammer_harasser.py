@@ -21,9 +21,6 @@ def dial_numbers(numbers_list):
 
         client.calls.create(to=number, from_=TWILIO_PHONE_NUMBER,
                             url=TWIML_INSTRUCTIONS_URL, method="GET")
-
-
-
     
 def program_start():
     keepcalling = input("Would you like to place indefinite calls?   >")
@@ -32,9 +29,7 @@ def program_start():
     else:
         print("Say 'yes' when ready")
         program_start()
-        
-        
-
+     
 def program_loop():
     loop_dial()        
     time.sleep(10)
@@ -45,7 +40,6 @@ def loop_dial():
 
 def run_again():
     program_loop()
-            
 
 program_start()
 
