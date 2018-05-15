@@ -17,7 +17,7 @@ client = TwilioRestClient("", "")
 
 def dial_numbers(numbers_list):
     for number in numbers_list:
-        print("Dialing " + number)
+        print("Now calling " + number)
 
         client.calls.create(to=number, from_=TWILIO_PHONE_NUMBER,
                             url=TWIML_INSTRUCTIONS_URL, method="GET")
