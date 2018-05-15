@@ -30,7 +30,8 @@ def program_start():
         program_loop()
 
 def program_loop():
-    loop_dial()        
+    loop_dial()  
+    #adjust the delay before running again here
     time.sleep(10)
     run_again()
 
